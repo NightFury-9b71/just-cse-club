@@ -1,0 +1,83 @@
+h2{
+    text-align: center;
+}
+.notice-container {
+    margin-top: 20px;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    /* background-color: #f9f9f9; */
+  }
+  
+  .notice-item {
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .notice-item:hover {
+    background-color: #ddd; /* Slight hover effect */
+  }
+  
+  .notice-item h5 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .notice-item p {
+    font-size: 1rem;
+    color: #555;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+  }
+  
+  .notice-item.gray {
+    background-color: #f0f0f0; /* Light gray */
+  }
+  
+  .notice-item.white {
+    background-color: #ffffff; /* White */
+  }
+  
+  .notice-item.expanded p {
+    white-space: normal; /* Allow multi-line text when expanded */
+    overflow: visible;  /* Show all content */
+  }
+  
+  /* Style for notice details */
+  .notice-item.expanded {
+    padding: 20px; /* Adjust padding when expanded */
+  }
+  
+  .notice-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .notice-details p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .notice-details strong {
+    font-weight: bold;
+  }
+  
+  /* Optional "Read more" style */
+  .notice-item.expanded::after {
+    content: "Click to collapse";
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
